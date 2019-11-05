@@ -4,7 +4,7 @@
     margin: auto;
     padding: 0;
     box-sizing: border-box;
-    max-width: 1280px;
+    max-width: 1200px;
 }
 
 /*header*/
@@ -264,6 +264,7 @@
     text-align: center;
     margin-top: 10px;
     font-family: 'Quicksand', sans-serif;
+    display: block;
 
 }
 
@@ -271,6 +272,7 @@
     text-align: center;
     margin-top: 10px;
     font-family: 'Quicksand', sans-serif;
+    display: block;
 }
 
 
@@ -426,6 +428,7 @@
     line-height: 25px;
     margin-bottom: 30px;
     opacity: .7;
+    display: block;
 }
 
 .person hr {
@@ -653,7 +656,171 @@ body {
     color: white;
 }
 
-@media (orientation: landscape) {
+
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+    .numbers {
+        width: 100%;
+        height: 50vh;
+        margin-top: 0px;
+    }
+
+    .numbersdiv {
+        margin: -200px auto;
+    }
+
+    .number {
+        margin-top: 10px;
+        position: relative;
+        top: 0%;
+        left: 15%;
+        right: 0%;
+        bottom: 0%;
+    }
+
+
+    .number img {
+        height: 200px;
+        margin-left: 21%;
+        margin-bottom: 20px;
+        animation: jello-horizontal 3s both infinite;
+        animation-delay: 3s;
+
+    }
+
+
+    .aboutp {
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Quicksand', sans-serif;
+        display: none;
+    }
+
+    .number .aboutp {
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Quicksand', sans-serif;
+        display: none;
+    }
+
+    .bgcheader {
+        height: 69vh;
+    }
+
+    .btn {
+        margin: 10% auto 5%;
+    }
+
+
+    /*team*/
+
+
+    .desc .h2class {
+        left: 45%;
+    }
+
+    .desc .h1class {
+        left: 35%;
+    }
+
+    .person {
+        height: 500px;
+    }
+
+    .person hr {
+        margin-left: 43%;
+    }
+
+    .person img {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    /*portfolio*/
+
+
+    .portfolio .h2class {
+        left: 40%;
+    }
+
+
+    .portfolio .h1class {
+        left: 32%;
+    }
+
+    .wrap img {
+        width: 200px;
+    }
+
+    .contact {
+        height: 50vh;
+        width: 100%;
+        margin-top: -300px;
+
+    }
+
+    .contact .h2class {
+        left: 45%;
+    }
+
+
+    .contact .h1class {
+        left: 35%;
+    }
+
+
+
+    /*footer*/
+
+    footer {
+        height: 10vh;
+        width: auto;
+        margin-top: 35%;
+        font-size: 14px;
+        background-color: rgb(243, 215, 215);
+        padding-top: 2%;
+    }
+
+    body {
+        scroll-behavior: smooth;
+    }
+
+    /*strzałki*/
+
+    .arrows {
+        font-size: 20px;
+        position: fixed;
+        top: 90%;
+        height: 50px;
+        width: 50px;
+        right: 2%;
+        color: rgb(134, 71, 71);
+        border: 1px solid rgb(134, 71, 71);
+        border-radius: 50%;
+        padding: 3px 15px 0 10px;
+
+    }
+
+    .headerj {
+        color: rgb(134, 71, 71);
+        text-decoration: none;
+        font-size: 60px;
+        display: block;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .arrowh {
+        color: white;
+    }
+
+
+}
+
+
+
+@media (orientation: landscape) and (min-width: 1300px) {
     /*header*/
 
     .logo {
@@ -661,18 +828,14 @@ body {
     }
 
     .hamburger {
-
-        top: 3%;
-        right: 6%;
+        top: 1%;
+        right: 12%;
         font-size: 60px;
 
     }
 
-
     .menuburger {
-
         height: 30px;
-
     }
 
 
@@ -682,8 +845,8 @@ body {
     }
 
     .h2class {
-        font-size: 20px;
-        padding-top: 5%;
+        font-size: 50px;
+        padding-top: 18%;
     }
 
 
@@ -706,6 +869,7 @@ body {
     .numbers {
         height: 40vh;
         position: relative;
+        margin-top: -10px;
     }
 
 
@@ -752,13 +916,14 @@ body {
         width: 100px;
         font-family: 'Quicksand', sans-serif;
         font-size: 17px;
+        display: block;
 
     }
 
     /*team*/
 
     .desc .h2class {
-        left: 50%;
+        left: 45.5%;
     }
 
     .desc .h1class {
@@ -802,7 +967,200 @@ body {
 
     .wrap img {
         width: 350px;
-        margin: 0 0 0 -5%;
+        margin: 0 -3%;
+    }
+
+
+
+    /*contact*/
+
+    .contact {
+        height: 100vh;
+        margin-top: 3%;
+
+    }
+
+
+    .contact .h2class {
+        left: 49%;
+    }
+
+
+    .contact .h1class {
+        left: 45%;
+    }
+
+    /*footer*/
+
+    footer {
+        height: 10vh;
+        margin-top: 15%;
+        padding-top: 1%;
+    }
+
+
+    /*strzałki*/
+
+    .arrows {
+        top: 80%;
+        right: 8%;
+    }
+
+    .cross {
+        top: 3%;
+        right: 6%;
+        font-size: 60px;
+
+    }
+}
+
+
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .logo {
+        margin: 20px 20px 5px 10px;
+    }
+
+    .hamburger {
+        top: 1%;
+        right: 18%;
+        font-size: 60px;
+
+    }
+
+    .menuburger {
+        height: 30px;
+    }
+
+
+    .bgcheader {
+        background-position: 50% 40%;
+
+    }
+
+    .h2class {
+        font-size: 50px;
+        padding-top: 18%;
+    }
+
+
+
+    .h1class {
+        padding-top: 5%;
+        font-size: 40px;
+    }
+
+    .btn {
+        margin: 10% auto;
+    }
+
+    .arrow {
+        font-size: 50px;
+    }
+
+    /*numbers*/
+
+    .numbers {
+        height: 40vh;
+        position: relative;
+        margin-top: -10px;
+    }
+
+
+    .number img {
+        height: 150px;
+        margin-left: 20%;
+        margin-bottom: 20px;
+
+    }
+
+    .number {
+        margin-top: 50px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .num1 {
+        position: absolute;
+        right: 84%;
+        width: 30px;
+
+    }
+
+    .num2 {
+        width: 30px;
+        top: auto;
+        right: 25%;
+        bottom: auto;
+    }
+
+    .num3 {
+        top: auto;
+        width: 30px;
+        right: 55%;
+        bottom: auto;
+    }
+
+
+    .number .aboutp {
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 33px;
+        height: 10px;
+        width: 100px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 17px;
+        display: block;
+    }
+
+    /*team*/
+
+    .desc .h2class {
+        left: 45.5%;
+    }
+
+    .desc .h1class {
+        left: 45%;
+    }
+
+    .desc {
+        margin-left: 30px;
+    }
+
+    .person hr {
+        margin-left: 41%;
+    }
+
+    .person {
+        width: 45%;
+    }
+
+
+
+    .person img {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+
+
+    /*portfolio*/
+
+
+
+    .portfolio .h2class {
+        left: 47%;
+    }
+
+
+    .portfolio .h1class {
+        left: 45%;
+    }
+
+
+    .wrap img {
+        width: 310px;
+        margin: 0 0 0 -14%;
     }
 
 
